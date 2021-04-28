@@ -1,0 +1,20 @@
+[package]
+name = "my-redis"
+version = "0.1.0"
+authors = ["OnikenX <OnikenX@pm.me>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+mini-redis = "0.4"
+
+#for shared bytes when cloned
+bytes = "1.0.1"
+
+#for faster mutex
+parking_lot = "0.11.1"
+
+#for a cuncurrent ready hashmap
+dashmap = "4.0.2"
